@@ -11,7 +11,8 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Describes a single score in the database.
  *
  * @ORM\Entity()
- * @ApiResource()
+ * @ApiResource(attributes={"order"={"score": "DESC"}})
+ *
  * @author Auron Consulting Ltd
  */
 class Score
